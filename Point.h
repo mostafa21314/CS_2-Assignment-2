@@ -12,10 +12,12 @@ public:
 	Point(float, float);
 	void SetX(float);
 	void SetY(float);
-	float GetX();
-	float GetY();
-	void PrintXY();
-	float Distance(Point);
+	float GetX() const;
+	float GetY() const;
+	void PrintXY() const;
+	float Distance(const Point &) const;
 };
+Point Center(Point*, int);
+void Belong(Point*, Point*, const Point &);
 #endif
 
