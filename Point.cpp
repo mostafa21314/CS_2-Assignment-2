@@ -38,7 +38,7 @@ float Point::GetY() const//getter that returns y
 {
 	return y;
 }
-float Point::Distance(Point temp) const //Calculates distance between the point and another point
+float Point::Distance(const Point &temp) const //Calculates distance between the point and another point
 {
 	return sqrt(pow(x-temp.x,2)+pow(y-temp.y,2));//the same equation written in the assignment but in c++
 }
